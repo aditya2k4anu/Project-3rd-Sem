@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Quality Index Calculator</title>
+<link rel="stylesheet" href="Project.css">
+</head>
+<body>
+<div id="container">
+    <h2>Water Quality Index Calculator</h2>
+    <label for="ph">pH:</label>
+    <input type="number" id="ph" step="0.1" min="0" max="14"><br>
+    <label for="do">Dissolved Oxygen (DO):</label>
+    <input type="number" id="do" step="0.1" min="0"><br>
+    <label for="bod">Biochemical Oxygen Demand (BOD):</label>
+    <input type="number" id="bod" step="0.1" min="0"><br>
+    <label for="fc">Fecal Coliform (FC):</label>
+    <input type="number" id="fc" step="0.1" min="0"><br>
+    <button onclick="calculateWQI()">Calculate WQI</button>
+    <div id="result"></div>
+</div>
+<script src="Project.js"></script>
+</body>
+</html>
